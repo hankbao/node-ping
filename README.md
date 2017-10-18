@@ -93,6 +93,7 @@ Below is the possible configuration
  * @property {boolean} numeric - Map IP address to hostname or not
  * @property {number} timeout - Time duration for ping command to exit
  * @property {number} min_reply - Exit after sending number of ECHO_REQUEST
+ * @property {number} bytes - Specify the number of data bytes to be sent
  * @property {string[]} extra - Optional options does not provided
  */
 ```
@@ -135,10 +136,10 @@ Below is the possible configuration
 arguments in `PingConfig.extra` will definitely be varied across different
 platforms.
 
-* However, `numeric`, `timeout` and `min_reply` have been abstracted. Values for
+* However, `numeric`, `timeout`, `min_reply` and `bytes` have been abstracted. Values for
 them are expected to be cross platform.
 
-* By setting `numeric`, `timeout` or `min_reply` to false, you can run `ping`
+* By setting `numeric`, `timeout`, `min_reply` and `bytes` to false, you can run `ping`
 without corresponding arguments.
 
 # Contributing
